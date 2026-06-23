@@ -1,28 +1,9 @@
 # 文言文 LLVM 編譯器
 
-這是成功大學 114-2「編譯系統」第二次作業的實作。專案的目標是把文言文語法寫成的 `.wy` 程式，經過詞法分析、語法分析與語意處理後產生 LLVM IR，最後編譯成可以直接執行的程式。
+專案的目標是把文言文語法寫成的 `.wy` 程式，經過詞法分析、語法分析與語意處理後產生 LLVM IR，最後編譯成可以直接執行的程式。
 
 一開始看到文言文語法和 LLVM IR 放在一起其實滿衝擊的，因為平常寫 C 或 Python 時，很少需要直接處理 Token、符號表、暫存器與基本區塊。完成這份作業後，我對一個簡單編譯器從原始碼走到執行檔的流程有了比較具體的理解。
 
-## 完成狀態
-
-目前已在課程伺服器通過所有官方測試：
-
-```text
-Part 1 (verbose): 64/64
-Part 2 (runtime): 41/41
-Total:            105/105
-
-All tests passed!
-```
-
-除了完成題目要求的功能，我也重新整理了部分內部架構：
-
-- 將 Parser 的暫存狀態集中成 `ParserSession`
-- 集中管理 LLVM IR 指令、Label 與 Branch 的文字輸出
-- 分離多值資料的型別檢查、深拷貝和預設值建立邏輯
-- 讓控制流程模組透過統一介面產生 IR
-- 保留作業要求的 CLI、verbose 格式與 Runtime 行為
 
 ## 編譯流程
 
@@ -334,6 +315,4 @@ Windows PowerShell：
 - [GNU Bison Manual](https://www.gnu.org/software/bison/manual/)
 - [Flex Manual](https://westes.github.io/flex/manual/)
 
-## 說明
 
-本專案用於課程學習與編譯器實作練習。`lib/WJCL`、`lib/utf8.c` 與作業框架的著作權及授權依原專案規定。
