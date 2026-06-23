@@ -229,18 +229,14 @@ Parser 使用 `ParserSession` 集中保存：
 | GCC | 支援 C11 |
 | LLVM / llc | LLVM 14 以上 |
 
-Clone 時要取得 Submodule：
+Clone 專案：
 
 ```bash
-git clone --recurse-submodules https://github.com/Danielncku/compiler.git
+git clone https://github.com/Danielncku/compiler.git
 cd compiler
 ```
 
-若已經 Clone：
-
-```bash
-git submodule update --init --recursive
-```
+需要的 `WJCL` 與 `utf8.c` 已經放在 `lib/` 中，不需要另外下載 Submodule。
 
 ## 建置
 

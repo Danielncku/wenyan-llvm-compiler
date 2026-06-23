@@ -1,6 +1,0 @@
-[submodule "lib/utf8.c"]
-	path = lib/utf8.c
-	url = https://github.com/zahash/utf8.c
-[submodule "lib/WJCL"]
-	path = lib/WJCL
-	url = https://github.com/WavJaby/WJCL/
