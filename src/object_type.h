@@ -1,0 +1,29 @@
+//
+// Created by WavJaby on 2026/5/25.
+//
+
+#ifndef WENYAN_LLVM_OBJECT_TYPE_H
+#define WENYAN_LLVM_OBJECT_TYPE_H
+
+typedef enum {
+    OBJECT_TYPE_UNDEFINED,
+
+    OBJECT_TYPE_ARRAY,
+    OBJECT_TYPE_BOOL,
+    OBJECT_TYPE_NUM,
+    OBJECT_TYPE_STR,
+    OBJECT_TYPE_FUNC,
+    OBJECT_TYPE_AUTO,
+
+    OBJECT_TYPE_I32,
+    OBJECT_TYPE_I64,
+    OBJECT_TYPE_F32,
+    OBJECT_TYPE_F64,
+
+    OBJECT_TYPE_SYMBOL,
+    OBJECT_TYPE_REGISTER,
+
+    OBJECT_TYPE_EXP_RESULT, // For chain expression last return
+} ObjectType;
+
+#endif //WENYAN_LLVM_OBJECT_TYPE_H

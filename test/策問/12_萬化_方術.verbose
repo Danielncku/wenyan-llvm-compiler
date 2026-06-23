@@ -1,0 +1,59 @@
+test/策問/12_萬化_方術.wy:1:2     |> (scope id: 0, type: SCOPE_MAIN)
+test/策問/12_萬化_方術.wy:7:9     |    > (function define: 牛頓求根法)
+test/策問/12_萬化_方術.wy:7:9     |> (scope id: 0, type: SCOPE_FUNCTION)
+test/策問/12_萬化_方術.wy:7:29    |    > (function param: 試, type: 數)
+test/策問/12_萬化_方術.wy:7:33    |    > (function start body)
+test/策問/12_萬化_方術.wy:9:12    |    var 「甲」 <- 1
+test/策問/12_萬化_方術.wy:10:12   |    var 「乙」 <- 1
+test/策問/12_萬化_方術.wy:11:10   |    > (for loop, count: 「試」)
+test/策問/12_萬化_方術.wy:11:10   |    > (scope id: 1, type: SCOPE_FOR_LOOP)
+test/策問/12_萬化_方術.wy:13:18   |        exp 「甲」 * 「甲」 -> reg<全數>
+test/策問/12_萬化_方術.wy:13:23   |        exp reg<全數> - 2 -> reg<全數>
+test/策問/12_萬化_方術.wy:13:25   |        set 「乙」 <- reg<全數>
+test/策問/12_萬化_方術.wy:15:16   |        exp 「甲」 * 2 -> reg<全數>
+test/策問/12_萬化_方術.wy:15:19   |        var 「丙」 <- reg<全數>
+test/策問/12_萬化_方術.wy:17:18   |        exp 「乙」 / 「丙」 -> reg<全數>
+test/策問/12_萬化_方術.wy:17:21   |        var 「茂」 <- reg<全數>
+test/策問/12_萬化_方術.wy:19:18   |        exp 「甲」 - 「茂」 -> reg<全數>
+test/策問/12_萬化_方術.wy:19:20   |        set 「甲」 <- reg<全數>
+test/策問/12_萬化_方術.wy:20:5    |    < (scope id: 1, type: SCOPE_FOR_LOOP)
+╔══════╦══════╦═══════╦════╗
+║ 名稱 ║ 型別 ║ Index ║ 術 ║
+╠══════╬══════╬═══════╬════╣
+║ 丙   ║ 全數 ║ 3     ║    ║
+║ 茂   ║ 全數 ║ 4     ║    ║
+╚══════╩══════╩═══════╩════╝
+test/策問/12_萬化_方術.wy:20:5    |    < (for loop end)
+test/策問/12_萬化_方術.wy:22:1    |    return 「甲」
+test/策問/12_萬化_方術.wy:22:10   |    < (function end: 牛頓求根法)
+test/策問/12_萬化_方術.wy:22:10   |< (scope id: 0, type: SCOPE_FUNCTION)
+╔══════╦══════╦═══════╦════╗
+║ 名稱 ║ 型別 ║ Index ║ 術 ║
+╠══════╬══════╬═══════╬════╣
+║ 試   ║ 全數 ║ 0     ║    ║
+║ 甲   ║ 全數 ║ 1     ║    ║
+║ 乙   ║ 全數 ║ 2     ║    ║
+╚══════╩══════╩═══════╩════╝
+test/策問/12_萬化_方術.wy:25:12   |    call 牛頓求根法(1 args) -> reg<全數>
+test/策問/12_萬化_方術.wy:25:12   |    PRINT: reg<全數>
+test/策問/12_萬化_方術.wy:26:12   |    call 牛頓求根法(1 args) -> reg<全數>
+test/策問/12_萬化_方術.wy:26:12   |    PRINT: reg<全數>
+test/策問/12_萬化_方術.wy:27:12   |    call 牛頓求根法(1 args) -> reg<全數>
+test/策問/12_萬化_方術.wy:27:12   |    PRINT: reg<全數>
+test/策問/12_萬化_方術.wy:28:12   |    call 牛頓求根法(1 args) -> reg<全數>
+test/策問/12_萬化_方術.wy:28:12   |    PRINT: reg<全數>
+test/策問/12_萬化_方術.wy:29:13   |    call 牛頓求根法(1 args) -> reg<全數>
+test/策問/12_萬化_方術.wy:29:13   |    PRINT: reg<全數>
+test/策問/12_萬化_方術.wy:30:16   |    call 牛頓求根法(1 args) -> reg<全數>
+test/策問/12_萬化_方術.wy:30:16   |    PRINT: reg<全數>
+test/策問/12_萬化_方術.wy:31:17   |    call 牛頓求根法(1 args) -> reg<全數>
+test/策問/12_萬化_方術.wy:31:17   |    PRINT: reg<全數>
+test/策問/12_萬化_方術.wy:31:19   |< (scope id: 0, type: SCOPE_MAIN)
+╔════════════╦══════╦═══════╦═════════╗
+║ 名稱       ║ 型別 ║ Index ║ 術      ║
+╠════════════╬══════╬═══════╬═════════╣
+║ 冪         ║ 術   ║ -1    ║ builtin ║
+║ 平方根     ║ 術   ║ -1    ║ builtin ║
+║ 牛頓求根法 ║ 術   ║ 0     ║ ctx:1   ║
+╚════════════╩══════╩═══════╩═════════╝
+test/策問/12_萬化_方術.wy:31:19   |凡31行

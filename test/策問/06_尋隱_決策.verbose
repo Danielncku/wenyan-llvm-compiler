@@ -1,0 +1,65 @@
+test/策問/06_尋隱_決策.wy:1:2     |> (scope id: 0, type: SCOPE_MAIN)
+test/策問/06_尋隱_決策.wy:9:24    |    PRINT: "松下問童子，欲尋隱者蹤。"
+test/策問/06_尋隱_決策.wy:11:8    |    var 「尋訪線索」 <- 3
+test/策問/06_尋隱_決策.wy:14:11   |    exp 「尋訪線索」 > 2 -> reg<爻>
+test/策問/06_尋隱_決策.wy:14:11   |    > (if)
+test/策問/06_尋隱_決策.wy:14:11   |    > (scope id: 1, type: SCOPE_IF_STMT)
+test/策問/06_尋隱_決策.wy:15:28   |        PRINT: "想當然耳！線索俱全，必能尋得隱者。"
+test/策問/06_尋隱_決策.wy:16:1    |    < (scope id: 1, type: SCOPE_IF_STMT)
+test/策問/06_尋隱_決策.wy:16:1    |    > (else)
+test/策問/06_尋隱_決策.wy:16:1    |    > (scope id: 1, type: SCOPE_IF_STMT)
+test/策問/06_尋隱_決策.wy:17:29   |        PRINT: "怪哉！深山逢童子，竟問不出隻言片語？"
+test/策問/06_尋隱_決策.wy:18:1    |    < (scope id: 1, type: SCOPE_IF_STMT)
+test/策問/06_尋隱_決策.wy:18:1    |    < (if end)
+test/策問/06_尋隱_決策.wy:21:11   |    exp 「尋訪線索」 == 1 -> reg<爻>
+test/策問/06_尋隱_決策.wy:21:11   |    > (if)
+test/策問/06_尋隱_決策.wy:21:11   |    > (scope id: 2, type: SCOPE_IF_STMT)
+test/策問/06_尋隱_決策.wy:22:24   |        PRINT: "童子答曰：『言師採藥去。』"
+test/策問/06_尋隱_決策.wy:23:12   |        exp 「尋訪線索」 == 2 -> reg<爻>
+test/策問/06_尋隱_決策.wy:23:12   |    < (scope id: 2, type: SCOPE_IF_STMT)
+test/策問/06_尋隱_決策.wy:23:12   |    > (else if)
+test/策問/06_尋隱_決策.wy:23:12   |    > (scope id: 2, type: SCOPE_IF_STMT)
+test/策問/06_尋隱_決策.wy:24:25   |        PRINT: "童子指山曰：『只在此山中。』"
+test/策問/06_尋隱_決策.wy:25:12   |        exp 「尋訪線索」 == 3 -> reg<爻>
+test/策問/06_尋隱_決策.wy:25:12   |    < (scope id: 2, type: SCOPE_IF_STMT)
+test/策問/06_尋隱_決策.wy:25:12   |    > (else if)
+test/策問/06_尋隱_決策.wy:25:12   |    > (scope id: 2, type: SCOPE_IF_STMT)
+test/策問/06_尋隱_決策.wy:26:25   |        PRINT: "童子搖頭曰：『雲深不知處。』"
+test/策問/06_尋隱_決策.wy:27:1    |    < (scope id: 2, type: SCOPE_IF_STMT)
+test/策問/06_尋隱_決策.wy:27:1    |    > (else)
+test/策問/06_尋隱_決策.wy:27:1    |    > (scope id: 2, type: SCOPE_IF_STMT)
+test/策問/06_尋隱_決策.wy:28:21   |        PRINT: "奇了，童子竟言他物！"
+test/策問/06_尋隱_決策.wy:29:1    |    < (scope id: 2, type: SCOPE_IF_STMT)
+test/策問/06_尋隱_決策.wy:29:1    |    < (if end)
+test/策問/06_尋隱_決策.wy:32:15   |    var 「雲」 <- true
+test/策問/06_尋隱_決策.wy:32:19   |    var 「霧」 <- false
+test/策問/06_尋隱_決策.wy:35:10   |    exp 「雲」 || 「霧」 -> reg<爻>
+test/策問/06_尋隱_決策.wy:35:15   |    > (if)
+test/策問/06_尋隱_決策.wy:35:15   |    > (scope id: 3, type: SCOPE_IF_STMT)
+test/策問/06_尋隱_決策.wy:36:28   |        PRINT: "妙哉，山中尚存一絲雲霧，仙氣縹緲！"
+test/策問/06_尋隱_決策.wy:37:1    |    < (scope id: 3, type: SCOPE_IF_STMT)
+test/策問/06_尋隱_決策.wy:37:1    |    < (if end)
+test/策問/06_尋隱_決策.wy:39:10   |    exp 「雲」 && 「霧」 -> reg<爻>
+test/策問/06_尋隱_決策.wy:39:15   |    > (if)
+test/策問/06_尋隱_決策.wy:39:15   |    > (scope id: 4, type: SCOPE_IF_STMT)
+test/策問/06_尋隱_決策.wy:40:28   |        PRINT: "善哉，雲霧皆備，此乃神仙洞府之境！"
+test/策問/06_尋隱_決策.wy:41:1    |    < (scope id: 4, type: SCOPE_IF_STMT)
+test/策問/06_尋隱_決策.wy:41:1    |    < (if end)
+test/策問/06_尋隱_決策.wy:44:12   |    set 「霧」 <- 「雲」
+test/策問/06_尋隱_決策.wy:45:10   |    exp 「雲」 && 「霧」 -> reg<爻>
+test/策問/06_尋隱_決策.wy:45:15   |    > (if)
+test/策問/06_尋隱_決策.wy:45:15   |    > (scope id: 5, type: SCOPE_IF_STMT)
+test/策問/06_尋隱_決策.wy:46:39   |        PRINT: "大善！雲遮霧掩，今皆化作漫天純白，真乃『雲深不知處』矣！"
+test/策問/06_尋隱_決策.wy:47:1    |    < (scope id: 5, type: SCOPE_IF_STMT)
+test/策問/06_尋隱_決策.wy:47:1    |    < (if end)
+test/策問/06_尋隱_決策.wy:47:2    |< (scope id: 0, type: SCOPE_MAIN)
+╔══════════╦══════╦═══════╦═════════╗
+║ 名稱     ║ 型別 ║ Index ║ 術      ║
+╠══════════╬══════╬═══════╬═════════╣
+║ 冪       ║ 術   ║ -1    ║ builtin ║
+║ 平方根   ║ 術   ║ -1    ║ builtin ║
+║ 尋訪線索 ║ 全數 ║ 0     ║         ║
+║ 雲       ║ 爻   ║ 1     ║         ║
+║ 霧       ║ 爻   ║ 2     ║         ║
+╚══════════╩══════╩═══════╩═════════╝
+test/策問/06_尋隱_決策.wy:47:2    |凡47行

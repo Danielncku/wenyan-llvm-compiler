@@ -1,0 +1,53 @@
+test/策問/07_酒宴_循環.wy:1:2     |> (scope id: 0, type: SCOPE_MAIN)
+test/策問/07_酒宴_循環.wy:7:16    |    PRINT: "春日宴。"
+test/策問/07_酒宴_循環.wy:9:8     |    var 「酒數」 <- 3
+test/策問/07_酒宴_循環.wy:12:1    |    > (while loop)
+test/策問/07_酒宴_循環.wy:12:1    |    > (scope id: 1, type: SCOPE_WHILE_LOOP)
+test/策問/07_酒宴_循環.wy:12:13   |        exp 「酒數」 == 0 -> reg<爻>
+test/策問/07_酒宴_循環.wy:12:13   |        > (if)
+test/策問/07_酒宴_循環.wy:12:13   |        > (scope id: 2, type: SCOPE_IF_STMT)
+test/策問/07_酒宴_循環.wy:12:14   |            break (loop1)
+test/策問/07_酒宴_循環.wy:12:16   |        < (scope id: 2, type: SCOPE_IF_STMT)
+test/策問/07_酒宴_循環.wy:12:16   |        < (if end)
+test/策問/07_酒宴_循環.wy:15:22   |        PRINT: "飲綠酒"
+test/策問/07_酒宴_循環.wy:15:22   |        PRINT: 「酒數」
+test/策問/07_酒宴_循環.wy:15:22   |        PRINT: "杯，高歌一遍。"
+test/策問/07_酒宴_循環.wy:17:13   |        exp 「酒數」 - 1 -> reg<全數>
+test/策問/07_酒宴_循環.wy:17:15   |        set 「酒數」 <- reg<全數>
+test/策問/07_酒宴_循環.wy:18:1    |    < (scope id: 1, type: SCOPE_WHILE_LOOP)
+test/策問/07_酒宴_循環.wy:18:1    |    < (while loop end)
+test/策問/07_酒宴_循環.wy:20:23   |    PRINT: "酒闌之際，再拜陳三願。"
+test/策問/07_酒宴_循環.wy:23:6    |    > (for loop, count: 2)
+test/策問/07_酒宴_循環.wy:23:6    |    > (scope id: 3, type: SCOPE_FOR_LOOP)
+test/策問/07_酒宴_循環.wy:24:30   |        PRINT: "一願郎君千歲，二願妾身常健。"
+test/策問/07_酒宴_循環.wy:25:1    |    < (scope id: 3, type: SCOPE_FOR_LOOP)
+test/策問/07_酒宴_循環.wy:25:1    |    < (for loop end)
+test/策問/07_酒宴_循環.wy:27:8    |    var 「願數」 <- 3
+test/策問/07_酒宴_循環.wy:30:9    |    exp 「願數」 > 2 -> reg<爻>
+test/策問/07_酒宴_循環.wy:30:9    |    > (if)
+test/策問/07_酒宴_循環.wy:30:9    |    > (scope id: 4, type: SCOPE_IF_STMT)
+test/策問/07_酒宴_循環.wy:31:10   |        > (for loop, count: 2)
+test/策問/07_酒宴_循環.wy:31:10   |        > (scope id: 5, type: SCOPE_FOR_LOOP)
+test/策問/07_酒宴_循環.wy:32:29   |            PRINT: "三願如同梁上燕，歲歲長相見。"
+test/策問/07_酒宴_循環.wy:33:5    |        < (scope id: 5, type: SCOPE_FOR_LOOP)
+test/策問/07_酒宴_循環.wy:33:5    |        < (for loop end)
+test/策問/07_酒宴_循環.wy:34:1    |    < (scope id: 4, type: SCOPE_IF_STMT)
+test/策問/07_酒宴_循環.wy:34:1    |    > (else)
+test/策問/07_酒宴_循環.wy:34:1    |    > (scope id: 4, type: SCOPE_IF_STMT)
+test/策問/07_酒宴_循環.wy:35:10   |        > (for loop, count: 3)
+test/策問/07_酒宴_循環.wy:35:10   |        > (scope id: 6, type: SCOPE_FOR_LOOP)
+test/策問/07_酒宴_循環.wy:36:31   |            PRINT: "怪哉！願數不足，花落人散兩成空！"
+test/策問/07_酒宴_循環.wy:37:5    |        < (scope id: 6, type: SCOPE_FOR_LOOP)
+test/策問/07_酒宴_循環.wy:37:5    |        < (for loop end)
+test/策問/07_酒宴_循環.wy:38:1    |    < (scope id: 4, type: SCOPE_IF_STMT)
+test/策問/07_酒宴_循環.wy:38:1    |    < (if end)
+test/策問/07_酒宴_循環.wy:38:2    |< (scope id: 0, type: SCOPE_MAIN)
+╔════════╦══════╦═══════╦═════════╗
+║ 名稱   ║ 型別 ║ Index ║ 術      ║
+╠════════╬══════╬═══════╬═════════╣
+║ 冪     ║ 術   ║ -1    ║ builtin ║
+║ 平方根 ║ 術   ║ -1    ║ builtin ║
+║ 酒數   ║ 全數 ║ 0     ║         ║
+║ 願數   ║ 全數 ║ 1     ║         ║
+╚════════╩══════╩═══════╩═════════╝
+test/策問/07_酒宴_循環.wy:38:2    |凡38行

@@ -1,0 +1,94 @@
+test/殿試/割圓術.wy:1:2     |> (scope id: 0, type: SCOPE_MAIN)
+test/殿試/割圓術.wy:3:12    |    var 「半徑」 <- 1
+test/殿試/割圓術.wy:4:12    |    exp 「半徑」 * 「半徑」 -> reg<全數>
+test/殿試/割圓術.wy:4:15    |    var 「半徑平方」 <- reg<全數>
+test/殿試/割圓術.wy:6:9     |    > (function define: 求小弦)
+test/殿試/割圓術.wy:6:9     |> (scope id: 0, type: SCOPE_FUNCTION)
+test/殿試/割圓術.wy:6:27    |    > (function param: 裏觚之面, type: 數)
+test/殿試/割圓術.wy:6:35    |    > (function param: 輪數, type: 數)
+test/殿試/割圓術.wy:6:40    |    > (function start body)
+test/殿試/割圓術.wy:7:14    |    exp 「裏觚之面」 / 2.0e+00 -> reg<浮數>
+test/殿試/割圓術.wy:7:17    |    var 「半面」 <- reg<浮數>
+test/殿試/割圓術.wy:8:12    |    exp 「輪數」 < 1.0e+00 -> reg<爻>
+test/殿試/割圓術.wy:8:12    |    > (if)
+test/殿試/割圓術.wy:8:12    |    > (scope id: 1, type: SCOPE_IF_STMT)
+test/殿試/割圓術.wy:8:22    |        return 「裏觚之面」
+test/殿試/割圓術.wy:8:22    |    < (scope id: 1, type: SCOPE_IF_STMT)
+test/殿試/割圓術.wy:8:22    |    < (if end)
+test/殿試/割圓術.wy:9:13    |    exp 「半面」 * 「半面」 -> reg<浮數>
+test/殿試/割圓術.wy:9:16    |    var 「半面平方」 <- reg<浮數>
+test/殿試/割圓術.wy:10:17   |    exp 「半徑平方」 - 「半面平方」 -> reg<浮數>
+test/殿試/割圓術.wy:10:21   |    call 平方根(1 args) -> reg<浮數> [builtin]
+test/殿試/割圓術.wy:10:30   |    var 「股」 <- reg<浮數>
+test/殿試/割圓術.wy:11:12   |    exp 「半徑」 - 「股」 -> reg<浮數>
+test/殿試/割圓術.wy:11:15   |    var 「小句」 <- reg<浮數>
+test/殿試/割圓術.wy:12:13   |    exp 「小句」 * 「小句」 -> reg<浮數>
+test/殿試/割圓術.wy:12:23   |    exp reg<浮數> + 「半面平方」 -> reg<浮數>
+test/殿試/割圓術.wy:12:27   |    call 平方根(1 args) -> reg<浮數> [builtin]
+test/殿試/割圓術.wy:12:36   |    var 「小弦」 <- reg<浮數>
+test/殿試/割圓術.wy:13:22   |    exp 「輪數」 - 1 -> reg<浮數>
+test/殿試/割圓術.wy:13:26   |    call 求小弦(2 args) -> reg<浮數>
+test/殿試/割圓術.wy:13:32   |    return reg<浮數>
+test/殿試/割圓術.wy:14:8    |    < (function end: 求小弦)
+test/殿試/割圓術.wy:14:8    |< (scope id: 0, type: SCOPE_FUNCTION)
+╔══════════╦══════╦═══════╦════╗
+║ 名稱     ║ 型別 ║ Index ║ 術 ║
+╠══════════╬══════╬═══════╬════╣
+║ 裏觚之面 ║ 浮數 ║ 0     ║    ║
+║ 輪數     ║ 浮數 ║ 1     ║    ║
+║ 半面     ║ 浮數 ║ 2     ║    ║
+║ 半面平方 ║ 浮數 ║ 3     ║    ║
+║ 股       ║ 浮數 ║ 4     ║    ║
+║ 小句     ║ 浮數 ║ 5     ║    ║
+║ 小弦     ║ 浮數 ║ 6     ║    ║
+╚══════════╩══════╩═══════╩════╝
+test/殿試/割圓術.wy:17:9    |    > (function define: 割圓術求圓率)
+test/殿試/割圓術.wy:17:9    |> (scope id: 0, type: SCOPE_FUNCTION)
+test/殿試/割圓術.wy:17:29   |    > (function param: 原輪數, type: 數)
+test/殿試/割圓術.wy:17:35   |    > (function start body)
+test/殿試/割圓術.wy:18:11   |    exp 「原輪數」 - 1 -> reg<全數>
+test/殿試/割圓術.wy:18:14   |    var 「輪數」 <- reg<全數>
+test/殿試/割圓術.wy:19:14   |    call 冪(2 args) -> reg<浮數> [builtin]
+test/殿試/割圓術.wy:19:19   |    exp reg<浮數> * 6 -> reg<浮數>
+test/殿試/割圓術.wy:19:22   |    var 「觚數」 <- reg<浮數>
+test/殿試/割圓術.wy:20:19   |    call 求小弦(2 args) -> reg<浮數>
+test/殿試/割圓術.wy:20:22   |    var 「小弦」 <- reg<浮數>
+test/殿試/割圓術.wy:21:13   |    exp 「小弦」 * 「觚數」 -> reg<浮數>
+test/殿試/割圓術.wy:21:16   |    var 「觚周」 <- reg<浮數>
+test/殿試/割圓術.wy:22:10   |    exp 「觚周」 / 2 -> reg<浮數>
+test/殿試/割圓術.wy:22:18   |    exp reg<浮數> * 「半徑」 -> reg<浮數>
+test/殿試/割圓術.wy:22:21   |    var 「觚冪」 <- reg<浮數>
+test/殿試/割圓術.wy:23:15   |    exp 「觚冪」 / 「半徑平方」 -> reg<浮數>
+test/殿試/割圓術.wy:23:18   |    var 「圓率」 <- reg<浮數>
+test/殿試/割圓術.wy:24:35   |    PRINT: "割圓"
+test/殿試/割圓術.wy:24:35   |    PRINT: 「觚數」
+test/殿試/割圓術.wy:24:35   |    PRINT: "觚。所得圓率者。"
+test/殿試/割圓術.wy:25:21   |    PRINT: 「圓率」
+test/殿試/割圓術.wy:25:21   |    PRINT: "也。"
+test/殿試/割圓術.wy:27:1    |    return 「圓率」
+test/殿試/割圓術.wy:27:11   |    < (function end: 割圓術求圓率)
+test/殿試/割圓術.wy:27:11   |< (scope id: 0, type: SCOPE_FUNCTION)
+╔════════╦══════╦═══════╦════╗
+║ 名稱   ║ 型別 ║ Index ║ 術 ║
+╠════════╬══════╬═══════╬════╣
+║ 原輪數 ║ 全數 ║ 0     ║    ║
+║ 輪數   ║ 全數 ║ 1     ║    ║
+║ 觚數   ║ 浮數 ║ 2     ║    ║
+║ 小弦   ║ 浮數 ║ 3     ║    ║
+║ 觚周   ║ 浮數 ║ 4     ║    ║
+║ 觚冪   ║ 浮數 ║ 5     ║    ║
+║ 圓率   ║ 浮數 ║ 6     ║    ║
+╚════════╩══════╩═══════╩════╝
+test/殿試/割圓術.wy:30:13   |    call 割圓術求圓率(1 args) -> reg<浮數>
+test/殿試/割圓術.wy:30:13   |< (scope id: 0, type: SCOPE_MAIN)
+╔══════════════╦══════╦═══════╦═════════╗
+║ 名稱         ║ 型別 ║ Index ║ 術      ║
+╠══════════════╬══════╬═══════╬═════════╣
+║ 冪           ║ 術   ║ -1    ║ builtin ║
+║ 平方根       ║ 術   ║ -1    ║ builtin ║
+║ 半徑         ║ 全數 ║ 0     ║         ║
+║ 半徑平方     ║ 全數 ║ 1     ║         ║
+║ 求小弦       ║ 術   ║ 2     ║ ctx:1   ║
+║ 割圓術求圓率 ║ 術   ║ 3     ║ ctx:2   ║
+╚══════════════╩══════╩═══════╩═════════╝
+test/殿試/割圓術.wy:30:13   |凡30行

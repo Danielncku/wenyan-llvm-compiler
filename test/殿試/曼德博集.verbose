@@ -1,0 +1,145 @@
+test/殿試/曼德博集.wy:1:2     |> (scope id: 0, type: SCOPE_MAIN)
+test/殿試/曼德博集.wy:1:9     |    > (function define: 曼德博)
+test/殿試/曼德博集.wy:1:9     |> (scope id: 0, type: SCOPE_FUNCTION)
+test/殿試/曼德博集.wy:1:27    |    > (function param: 寬, type: 數)
+test/殿試/曼德博集.wy:1:32    |    > (function param: 高, type: 數)
+test/殿試/曼德博集.wy:1:36    |    > (function start body)
+test/殿試/曼德博集.wy:4:32    |    var 「皴法」 <- "丁龘蠹臺龜畫龍淼蔑高五三二"
+test/殿試/曼德博集.wy:7:12    |    exp 0 - 1.0e+00 -> reg<浮數>
+test/殿試/曼德博集.wy:7:15    |    var 「上」 <- reg<浮數>
+test/殿試/曼德博集.wy:7:26    |    exp 0 + 1.0e+00 -> reg<浮數>
+test/殿試/曼德博集.wy:7:29    |    var 「下」 <- reg<浮數>
+test/殿試/曼德博集.wy:8:12    |    exp 0 - 2.0e+00 -> reg<浮數>
+test/殿試/曼德博集.wy:8:15    |    var 「左」 <- reg<浮數>
+test/殿試/曼德博集.wy:8:26    |    exp 0 + 2.0e+00 -> reg<浮數>
+test/殿試/曼德博集.wy:8:29    |    var 「右」 <- reg<浮數>
+test/殿試/曼德博集.wy:10:14   |    exp 「右」 - 「左」 -> reg<浮數>
+test/殿試/曼德博集.wy:10:21   |    exp reg<浮數> / 「寬」 -> reg<浮數>
+test/殿試/曼德博集.wy:10:24   |    var 「橫步」 <- reg<浮數>
+test/殿試/曼德博集.wy:11:14   |    exp 「下」 - 「上」 -> reg<浮數>
+test/殿試/曼德博集.wy:11:21   |    exp reg<浮數> / 「高」 -> reg<浮數>
+test/殿試/曼德博集.wy:11:24   |    var 「縱步」 <- reg<浮數>
+test/殿試/曼德博集.wy:13:12   |    var 「戊」 <- 0
+test/殿試/曼德博集.wy:13:16   |    > (while loop)
+test/殿試/曼德博集.wy:13:16   |    > (scope id: 1, type: SCOPE_WHILE_LOOP)
+test/殿試/曼德博集.wy:13:29   |        exp 「戊」 == 「高」 -> reg<爻>
+test/殿試/曼德博集.wy:13:29   |        > (if)
+test/殿試/曼德博集.wy:13:29   |        > (scope id: 2, type: SCOPE_IF_STMT)
+test/殿試/曼德博集.wy:13:30   |            break (loop1)
+test/殿試/曼德博集.wy:13:32   |        < (scope id: 2, type: SCOPE_IF_STMT)
+test/殿試/曼德博集.wy:13:32   |        < (if end)
+test/殿試/曼德博集.wy:15:19   |        exp 「縱步」 * 「戊」 -> reg<浮數>
+test/殿試/曼德博集.wy:15:26   |        exp reg<浮數> + 「上」 -> reg<浮數>
+test/殿試/曼德博集.wy:15:29   |        var 「虛」 <- reg<浮數>
+test/殿試/曼德博集.wy:17:17   |        var 「行」 <- ""
+test/殿試/曼德博集.wy:19:16   |        var 「戌」 <- 0
+test/殿試/曼德博集.wy:19:20   |        > (while loop)
+test/殿試/曼德博集.wy:19:20   |        > (scope id: 3, type: SCOPE_WHILE_LOOP)
+test/殿試/曼德博集.wy:19:33   |            exp 「戌」 == 「寬」 -> reg<爻>
+test/殿試/曼德博集.wy:19:33   |            > (if)
+test/殿試/曼德博集.wy:19:33   |            > (scope id: 4, type: SCOPE_IF_STMT)
+test/殿試/曼德博集.wy:19:34   |                break (loop3)
+test/殿試/曼德博集.wy:19:36   |            < (scope id: 4, type: SCOPE_IF_STMT)
+test/殿試/曼德博集.wy:19:36   |            < (if end)
+test/殿試/曼德博集.wy:21:23   |            exp 「橫步」 * 「戌」 -> reg<浮數>
+test/殿試/曼德博集.wy:21:30   |            exp reg<浮數> + 「左」 -> reg<浮數>
+test/殿試/曼德博集.wy:21:33   |            var 「實」 <- reg<浮數>
+test/殿試/曼德博集.wy:23:21   |            var 「虛虛」 <- 「虛」
+test/殿試/曼德博集.wy:24:21   |            var 「實實」 <- 「實」
+test/殿試/曼德博集.wy:28:20   |            var 「己」 <- 0
+test/殿試/曼德博集.wy:28:24   |            > (while loop)
+test/殿試/曼德博集.wy:28:24   |            > (scope id: 5, type: SCOPE_WHILE_LOOP)
+test/殿試/曼德博集.wy:28:36   |                exp 「己」 == 12 -> reg<爻>
+test/殿試/曼德博集.wy:28:36   |                > (if)
+test/殿試/曼德博集.wy:28:36   |                > (scope id: 6, type: SCOPE_IF_STMT)
+test/殿試/曼德博集.wy:28:37   |                    break (loop5)
+test/殿試/曼德博集.wy:28:39   |                < (scope id: 6, type: SCOPE_IF_STMT)
+test/殿試/曼德博集.wy:28:39   |                < (if end)
+test/殿試/曼德博集.wy:30:34   |                exp 「實實」 * 「實實」 -> reg<浮數>
+test/殿試/曼德博集.wy:30:46   |                exp 「虛虛」 * 「虛虛」 -> reg<浮數>
+test/殿試/曼德博集.wy:30:49   |                var 「甲」 <- reg<浮數>
+test/殿試/曼德博集.wy:30:54   |                var 「乙」 <- reg<浮數>
+test/殿試/曼德博集.wy:31:26   |                exp 「甲」 + 「乙」 -> reg<浮數>
+test/殿試/曼德博集.wy:31:29   |                var 「丙」 <- reg<浮數>
+test/殿試/曼德博集.wy:32:24   |                exp 「丙」 > 4 -> reg<爻>
+test/殿試/曼德博集.wy:32:24   |                > (if)
+test/殿試/曼德博集.wy:32:24   |                > (scope id: 7, type: SCOPE_IF_STMT)
+test/殿試/曼德博集.wy:32:25   |                    break (loop5)
+test/殿試/曼德博集.wy:32:27   |                < (scope id: 7, type: SCOPE_IF_STMT)
+test/殿試/曼德博集.wy:32:27   |                < (if end)
+test/殿試/曼德博集.wy:34:28   |                exp 「虛虛」 * 「實實」 -> reg<浮數>
+test/殿試/曼德博集.wy:34:33   |                exp reg<浮數> * 2 -> reg<浮數>
+test/殿試/曼德博集.wy:34:40   |                exp reg<浮數> + 「虛」 -> reg<浮數>
+test/殿試/曼德博集.wy:34:42   |                set 「虛虛」 <- reg<浮數>
+test/殿試/曼德博集.wy:35:26   |                exp 「甲」 - 「乙」 -> reg<浮數>
+test/殿試/曼德博集.wy:35:33   |                exp reg<浮數> + 「實」 -> reg<浮數>
+test/殿試/曼德博集.wy:35:35   |                set 「實實」 <- reg<浮數>
+test/殿試/曼德博集.wy:37:20   |                exp 1 + 「己」 -> reg<全數>
+test/殿試/曼德博集.wy:37:22   |                set 「己」 <- reg<全數>
+test/殿試/曼德博集.wy:37:31   |            < (scope id: 5, type: SCOPE_WHILE_LOOP)
+╔══════╦══════╦═══════╦════╗
+║ 名稱 ║ 型別 ║ Index ║ 術 ║
+╠══════╬══════╬═══════╬════╣
+║ 甲   ║ 浮數 ║ 17    ║    ║
+║ 乙   ║ 浮數 ║ 18    ║    ║
+║ 丙   ║ 浮數 ║ 19    ║    ║
+╚══════╩══════╩═══════╩════╝
+test/殿試/曼德博集.wy:37:31   |            < (while loop end)
+test/殿試/曼德博集.wy:41:21   |            exp 13 - 「己」 -> reg<全數>
+test/殿試/曼德博集.wy:41:24   |            var 「巳」 <- reg<全數>
+test/殿試/曼德博集.wy:42:19   |            index 「皴法」[「巳」] -> reg<字串>
+test/殿試/曼德博集.wy:42:26   |            var 「墨」 <- reg<字串>
+test/殿試/曼德博集.wy:43:22   |            exp 「行」 + 「墨」 -> reg<字串>
+test/殿試/曼德博集.wy:43:24   |            set 「行」 <- reg<字串>
+test/殿試/曼德博集.wy:45:16   |            exp 1 + 「戌」 -> reg<全數>
+test/殿試/曼德博集.wy:45:18   |            set 「戌」 <- reg<全數>
+test/殿試/曼德博集.wy:45:27   |        < (scope id: 3, type: SCOPE_WHILE_LOOP)
+╔══════╦══════╦═══════╦════╗
+║ 名稱 ║ 型別 ║ Index ║ 術 ║
+╠══════╬══════╬═══════╬════╣
+║ 實   ║ 浮數 ║ 13    ║    ║
+║ 虛虛 ║ 浮數 ║ 14    ║    ║
+║ 實實 ║ 浮數 ║ 15    ║    ║
+║ 己   ║ 全數 ║ 16    ║    ║
+║ 巳   ║ 全數 ║ 20    ║    ║
+║ 墨   ║ 字串 ║ 21    ║    ║
+╚══════╩══════╩═══════╩════╝
+test/殿試/曼德博集.wy:45:27   |        < (while loop end)
+test/殿試/曼德博集.wy:47:19   |        PRINT: 「行」
+test/殿試/曼德博集.wy:48:12   |        exp 1 + 「戊」 -> reg<全數>
+test/殿試/曼德博集.wy:48:14   |        set 「戊」 <- reg<全數>
+test/殿試/曼德博集.wy:48:23   |    < (scope id: 1, type: SCOPE_WHILE_LOOP)
+╔══════╦══════╦═══════╦════╗
+║ 名稱 ║ 型別 ║ Index ║ 術 ║
+╠══════╬══════╬═══════╬════╣
+║ 虛   ║ 浮數 ║ 10    ║    ║
+║ 行   ║ 字串 ║ 11    ║    ║
+║ 戌   ║ 全數 ║ 12    ║    ║
+╚══════╩══════╩═══════╩════╝
+test/殿試/曼德博集.wy:48:23   |    < (while loop end)
+test/殿試/曼德博集.wy:49:8    |    < (function end: 曼德博)
+test/殿試/曼德博集.wy:49:8    |< (scope id: 0, type: SCOPE_FUNCTION)
+╔══════╦══════╦═══════╦════╗
+║ 名稱 ║ 型別 ║ Index ║ 術 ║
+╠══════╬══════╬═══════╬════╣
+║ 寬   ║ 浮數 ║ 0     ║    ║
+║ 高   ║ 浮數 ║ 1     ║    ║
+║ 皴法 ║ 字串 ║ 2     ║    ║
+║ 上   ║ 浮數 ║ 3     ║    ║
+║ 下   ║ 浮數 ║ 4     ║    ║
+║ 左   ║ 浮數 ║ 5     ║    ║
+║ 右   ║ 浮數 ║ 6     ║    ║
+║ 橫步 ║ 浮數 ║ 7     ║    ║
+║ 縱步 ║ 浮數 ║ 8     ║    ║
+║ 戊   ║ 全數 ║ 9     ║    ║
+╚══════╩══════╩═══════╩════╝
+test/殿試/曼德博集.wy:51:16   |    call 曼德博(2 args)
+test/殿試/曼德博集.wy:51:16   |< (scope id: 0, type: SCOPE_MAIN)
+╔════════╦══════╦═══════╦═════════╗
+║ 名稱   ║ 型別 ║ Index ║ 術      ║
+╠════════╬══════╬═══════╬═════════╣
+║ 冪     ║ 術   ║ -1    ║ builtin ║
+║ 平方根 ║ 術   ║ -1    ║ builtin ║
+║ 曼德博 ║ 術   ║ 0     ║ ctx:1   ║
+╚════════╩══════╩═══════╩═════════╝
+test/殿試/曼德博集.wy:51:16   |凡51行

@@ -1,0 +1,16 @@
+set(COMPILER_SOURCES
+    ${CMAKE_CURRENT_SOURCE_DIR}/main.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/expression.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/object.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/scope.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/value_data.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/compiler_util.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/control/if.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/control/for.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/control/while.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/control/function.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/byte_buffer.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/chinese_number.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/console_color.c
+    PARENT_SCOPE
+)

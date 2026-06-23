@@ -1,0 +1,22 @@
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/wenyan-toolchain.cmake")
+
+# Locate installed wy executable
+find_program(WY_EXECUTABLE wy HINTS "${PACKAGE_PREFIX_DIR}/@CMAKE_INSTALL_BINDIR@" REQUIRED)
+
+# Locate installed wenyan_runtime library
+find_library(WENYAN_RUNTIME_LIBRARY wenyan-runtime HINTS "${PACKAGE_PREFIX_DIR}/@CMAKE_INSTALL_LIBDIR@" REQUIRED)
+
+# Create imported targets so toolchain functions can reference them
+if(NOT TARGET wy)
+    add_executable(wy IMPORTED)
+    set_target_properties(wy PROPERTIES IMPORTED_LOCATION "${WY_EXECUTABLE}")
+endif()
+
+if(NOT TARGET wenyan_runtime)
+    add_library(wenyan_runtime STATIC IMPORTED)
+    set_target_properties(wenyan_runtime PROPERTIES IMPORTED_LOCATION "${WENYAN_RUNTIME_LIBRARY}")
+endif()
+
+check_required_components(Wenyan)

@@ -1,0 +1,71 @@
+test/策問/11_布陣_行列.wy:1:2     |> (scope id: 0, type: SCOPE_MAIN)
+test/策問/11_布陣_行列.wy:7:9     |    var 「五音」 <- reg<列>
+test/策問/11_布陣_行列.wy:8:7     |    push 「五音」 <- "宮"
+test/策問/11_布陣_行列.wy:8:14    |    push 「五音」 <- "商"
+test/策問/11_布陣_行列.wy:8:21    |    push 「五音」 <- "角"
+test/策問/11_布陣_行列.wy:8:28    |    push 「五音」 <- "徵"
+test/策問/11_布陣_行列.wy:8:35    |    push 「五音」 <- "羽"
+test/策問/11_布陣_行列.wy:10:9    |    var 「四象」 <- reg<列>
+test/策問/11_布陣_行列.wy:11:7    |    push 「四象」 <- "青龍"
+test/策問/11_布陣_行列.wy:11:15   |    push 「四象」 <- "白虎"
+test/策問/11_布陣_行列.wy:11:23   |    push 「四象」 <- "朱雀"
+test/策問/11_布陣_行列.wy:11:31   |    push 「四象」 <- "玄武"
+test/策問/11_布陣_行列.wy:13:9    |    var 「天地萬象」 <- reg<列>
+test/策問/11_布陣_行列.wy:14:9    |    push 「天地萬象」 <- 「五音」
+test/策問/11_布陣_行列.wy:14:15   |    push 「天地萬象」 <- 「四象」
+test/策問/11_布陣_行列.wy:16:20   |    PRINT: "五音之長，計有："
+test/策問/11_布陣_行列.wy:17:6    |    length 「五音」 -> reg<長數>
+test/策問/11_布陣_行列.wy:17:9    |    PRINT: reg<長數>
+test/策問/11_布陣_行列.wy:19:20   |    PRINT: "四象之長，計有："
+test/策問/11_布陣_行列.wy:20:6    |    length 「四象」 -> reg<長數>
+test/策問/11_布陣_行列.wy:20:9    |    PRINT: reg<長數>
+test/策問/11_布陣_行列.wy:22:28   |    PRINT: "天地萬象之長（內含幾列），計有："
+test/策問/11_布陣_行列.wy:23:8    |    length 「天地萬象」 -> reg<長數>
+test/策問/11_布陣_行列.wy:23:11   |    PRINT: reg<長數>
+test/策問/11_布陣_行列.wy:26:25   |    PRINT: "以迴圈逐一取五音列中之物："
+test/策問/11_布陣_行列.wy:28:8    |    var 「甲」 <- 1
+test/策問/11_布陣_行列.wy:29:1    |    > (while loop)
+test/策問/11_布陣_行列.wy:29:1    |    > (scope id: 1, type: SCOPE_WHILE_LOOP)
+test/策問/11_布陣_行列.wy:29:15   |        length 「五音」 -> reg<長數>
+test/策問/11_布陣_行列.wy:29:17   |        exp 「甲」 > reg<長數> -> reg<爻>
+test/策問/11_布陣_行列.wy:29:17   |        > (if)
+test/策問/11_布陣_行列.wy:29:17   |        > (scope id: 2, type: SCOPE_IF_STMT)
+test/策問/11_布陣_行列.wy:29:19   |            break (loop1)
+test/策問/11_布陣_行列.wy:29:21   |        < (scope id: 2, type: SCOPE_IF_STMT)
+test/策問/11_布陣_行列.wy:29:21   |        < (if end)
+test/策問/11_布陣_行列.wy:30:11   |        index 「五音」[「甲」] -> reg<字串>
+test/策問/11_布陣_行列.wy:30:15   |        PRINT: reg<字串>
+test/策問/11_布陣_行列.wy:31:12   |        exp 「甲」 + 1 -> reg<全數>
+test/策問/11_布陣_行列.wy:31:14   |        set 「甲」 <- reg<全數>
+test/策問/11_布陣_行列.wy:32:1    |    < (scope id: 1, type: SCOPE_WHILE_LOOP)
+test/策問/11_布陣_行列.wy:32:1    |    < (while loop end)
+test/策問/11_布陣_行列.wy:34:25   |    PRINT: "以迴圈逐一取四象列中之物："
+test/策問/11_布陣_行列.wy:36:8    |    var 「乙」 <- 1
+test/策問/11_布陣_行列.wy:37:1    |    > (while loop)
+test/策問/11_布陣_行列.wy:37:1    |    > (scope id: 3, type: SCOPE_WHILE_LOOP)
+test/策問/11_布陣_行列.wy:37:15   |        length 「四象」 -> reg<長數>
+test/策問/11_布陣_行列.wy:37:17   |        exp 「乙」 > reg<長數> -> reg<爻>
+test/策問/11_布陣_行列.wy:37:17   |        > (if)
+test/策問/11_布陣_行列.wy:37:17   |        > (scope id: 4, type: SCOPE_IF_STMT)
+test/策問/11_布陣_行列.wy:37:19   |            break (loop3)
+test/策問/11_布陣_行列.wy:37:21   |        < (scope id: 4, type: SCOPE_IF_STMT)
+test/策問/11_布陣_行列.wy:37:21   |        < (if end)
+test/策問/11_布陣_行列.wy:38:11   |        index 「四象」[「乙」] -> reg<字串>
+test/策問/11_布陣_行列.wy:38:15   |        PRINT: reg<字串>
+test/策問/11_布陣_行列.wy:39:12   |        exp 「乙」 + 1 -> reg<全數>
+test/策問/11_布陣_行列.wy:39:14   |        set 「乙」 <- reg<全數>
+test/策問/11_布陣_行列.wy:40:1    |    < (scope id: 3, type: SCOPE_WHILE_LOOP)
+test/策問/11_布陣_行列.wy:40:1    |    < (while loop end)
+test/策問/11_布陣_行列.wy:40:3    |< (scope id: 0, type: SCOPE_MAIN)
+╔══════════╦══════╦═══════╦═════════╗
+║ 名稱     ║ 型別 ║ Index ║ 術      ║
+╠══════════╬══════╬═══════╬═════════╣
+║ 冪       ║ 術   ║ -1    ║ builtin ║
+║ 平方根   ║ 術   ║ -1    ║ builtin ║
+║ 五音     ║ 列   ║ 0     ║         ║
+║ 四象     ║ 列   ║ 1     ║         ║
+║ 天地萬象 ║ 列   ║ 2     ║         ║
+║ 甲       ║ 全數 ║ 3     ║         ║
+║ 乙       ║ 全數 ║ 4     ║         ║
+╚══════════╩══════╩═══════╩═════════╝
+test/策問/11_布陣_行列.wy:40:3    |凡40行
